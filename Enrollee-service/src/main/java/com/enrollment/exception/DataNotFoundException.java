@@ -1,4 +1,4 @@
-package com.enrollment.model;
+package com.enrollment.exception;
 
 public class DataNotFoundException extends RuntimeException {
 

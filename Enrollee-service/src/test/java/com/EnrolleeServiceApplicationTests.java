@@ -66,7 +66,7 @@ class EnrolleeServiceApplicationTests extends AbstractTest {
 
 		int status = mvcResult.getResponse().getStatus();
 		assertEquals(200, status);
-		
+
 	}
 
 	@Test
@@ -75,6 +75,6 @@ class EnrolleeServiceApplicationTests extends AbstractTest {
 		MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.delete(uri)).andReturn();
 		int status = mvcResult.getResponse().getStatus();
 		assertEquals(200, status);
-		
+
 	}
 }

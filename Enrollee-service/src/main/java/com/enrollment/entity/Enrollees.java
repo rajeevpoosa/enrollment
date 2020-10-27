@@ -10,9 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import lombok.Data;
-
-@Data
 @Entity
 public class Enrollees {
 
@@ -31,5 +28,47 @@ public class Enrollees {
 	
 	@OneToMany(cascade=CascadeType.ALL)
 	private List<Dependents> dependents;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public boolean isActivationStatus() {
+		return activationStatus;
+	}
+
+	public void setActivationStatus(boolean activationStatus) {
+		this.activationStatus = activationStatus;
+	}
+
+	public String getPhoneNo() {
+		return phoneNo;
+	}
+
+	public void setPhoneNo(String phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+
+	public List<Dependents> getDependents() {
+		return dependents;
+	}
+
+	public void setDependents(List<Dependents> dependents) {
+		this.dependents = dependents;
+	}
+	
+	
 
 }
